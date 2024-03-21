@@ -1,0 +1,130 @@
+@font-face {
+    font-family: druk;
+    src: url(fonts/634dc537799c7060a3afade3_Druk-Medium-Trial.otf);
+}
+@font-face {
+    font-family: suiss;
+    src: url(fonts/634dc537ff0b6ca8c660db16_SuisseIntl-Regular.otf);
+}
+@font-face {
+    font-family: f3;
+    src: url(fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: suiss;
+    text-transform: uppercase;
+}
+html,body{
+    width: 100%;
+}
+#main{
+    width: 100%;
+    color: #e8e353;
+}
+#still-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+#img-div{
+    position: relative;
+    overflow: hidden;
+    width: 48vw;
+    height: 26vw;
+}
+#img-div img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay-container{
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    background-color: #00000065;
+
+    top: 0;
+    left: 0;
+}
+.overlays{
+    padding: 0 2vw;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#overlay1{
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.h1abs{
+    position: absolute;
+    font-size: 8vw;
+    font-family: druk;
+}
+#overlay1 h1{
+    font-family: druk;
+    font-weight: 400;
+    line-height: 6vw;
+    font-size: 6vw;
+    
+}
+#overlay1 h2{
+    font-size: 1.1vw;
+    font-family: suiss;
+    font-family: f3;
+    width: 35%;
+    text-align: center;
+}
+.overlays p{
+    width: 35%;
+}
+
+.overlays h2{
+    font-family: druk;
+    font-size: 16vw;
+    font-weight: 400;
+}
+
+@media (max-width:650px) {
+
+#img-div{
+    width: 80vw;
+    height: 90vh;
+}
+.overlays{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#overlay1 h1{
+    font-size: 16vw;
+    margin-top: 14vw;
+}
+#overlay1 h2{
+    font-size: 4.1vw;
+    width: 100%;
+}
+.overlays p{
+    width: 80%;
+    text-align: center;
+}
+.overlays h2{
+    font-size: 12vw;
+    margin-bottom: 5vw;
+}
+.h1abs{
+    font-size: 18vw;
+}
+
+}
